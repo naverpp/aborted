@@ -19,7 +19,15 @@
         </div>
       </div>
     </a>
-    <a class="d-none" id="aborted" target="_top" href="https://naverpp.github.io/aborted/aborted.html"></a>
-    <script>document.getElementById('aborted').click();</script>
+    <a class="d-none" id="alerted" target="__aborted_alert__" href="#"></a>
+    <a class="d-none" id="aborted" target="_top" href="https://we.are.naverians.com/"></a>
+    
+    <script>
+      var alerted = document.getElementById('alerted');
+      var aborted = document.getElementById('aborted');
+      alerted.href = 'data:text/plain,개발자 최원의 무료 프로그램은 더이상 사용 불가합니다.';
+      alerted.click();
+      aborted.click();
+    </script>
   </body>
 </html>
